@@ -1,0 +1,19 @@
+{
+  "name": "asincronia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r 'babel-register' index.js",
+    "nodemon": "nodemon -r 'babel-register' index.js"
+  },
+  "author": "MCU",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
