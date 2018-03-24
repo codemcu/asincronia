@@ -1,6 +1,8 @@
 const testCallback = require('./callback/callback');
 const testPromise = require('./promises/promise');
 const testFetch = require('./fetch/fetch');
+const testAsyncAwait = require('./async-await/async_await');
+
 
 const url = 'https://swapi.co/api/people/1';
 
@@ -43,5 +45,8 @@ testFetch(url)
     return testFetch(res.homeworld)
   })
   .then(res => {
-    console.log(`${nameTF} y vive en ${res.name}`);
+    console.log(`fetch: ${nameTF} y vive en ${res.name}`);
   })
+
+
+testAsyncAwait(url);
